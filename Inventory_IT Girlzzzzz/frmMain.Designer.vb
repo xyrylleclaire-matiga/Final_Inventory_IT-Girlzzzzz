@@ -26,6 +26,8 @@ Partial Class frmMain
         btnPurchaseOrder = New Button()
         btnReceive = New Button()
         btnHistory = New Button()
+        btnStockMonitoring = New Button()
+        btnStockIssuance = New Button()
         SuspendLayout()
         ' 
         ' btnLogout
@@ -64,12 +66,32 @@ Partial Class frmMain
         btnHistory.Text = "History"
         btnHistory.UseVisualStyleBackColor = True
         ' 
+        ' btnStockMonitoring
+        ' 
+        btnStockMonitoring.Location = New Point(581, 95)
+        btnStockMonitoring.Name = "btnStockMonitoring"
+        btnStockMonitoring.Size = New Size(157, 38)
+        btnStockMonitoring.TabIndex = 4
+        btnStockMonitoring.Text = "Stock Monitoring"
+        btnStockMonitoring.UseVisualStyleBackColor = True
+        ' 
+        ' btnStockIssuance
+        ' 
+        btnStockIssuance.Location = New Point(779, 95)
+        btnStockIssuance.Name = "btnStockIssuance"
+        btnStockIssuance.Size = New Size(157, 38)
+        btnStockIssuance.TabIndex = 5
+        btnStockIssuance.Text = "Stock Issuance"
+        btnStockIssuance.UseVisualStyleBackColor = True
+        ' 
         ' frmMain
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.InactiveCaption
         ClientSize = New Size(1269, 586)
+        Controls.Add(btnStockIssuance)
+        Controls.Add(btnStockMonitoring)
         Controls.Add(btnHistory)
         Controls.Add(btnReceive)
         Controls.Add(btnPurchaseOrder)
@@ -84,4 +106,6 @@ Partial Class frmMain
     Friend WithEvents btnPurchaseOrder As Button
     Friend WithEvents btnReceive As Button
     Friend WithEvents btnHistory As Button
+    Friend WithEvents btnStockMonitoring As Button
+    Friend WithEvents btnStockIssuance As Button
 End Class

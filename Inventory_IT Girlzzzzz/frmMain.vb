@@ -18,4 +18,14 @@
         frmHistory.Show()
         Me.Hide()
     End Sub
+
+    Private Sub btnStockMonitoring_Click(sender As Object, e As EventArgs) Handles btnStockMonitoring.Click
+        frmStockMonitoring.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnStockIssuance_Click(sender As Object, e As EventArgs) Handles btnStockIssuance.Click
+        frmStockIssuance.Show()
+        Me.Hide()
+    End Sub
 End Class
